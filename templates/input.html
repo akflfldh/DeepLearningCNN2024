@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<h1>Cat and Dog Predict </h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <label for="image">이미지 선택:</label>
+        <input type="file" name="image" id="image">
+        <button type="submit">업로드</button>
+    </form>
+    <div>
+        분류: {{className}}
+         <img src="data:image/jpeg;base64,{{ imageData }}" alt="Uploaded Image">
+    </div>
+
+</html>
